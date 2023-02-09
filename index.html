@@ -1,0 +1,76 @@
+<!--
+  Name: Nurkhat Jumabaev
+  Course: CSc337
+  Description: This is the main page for the
+  welcome to the jumble website.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head meta="utf-8">
+    <title>
+      Welcome to the Jumble
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <h1>
+        Welcome to the Jumble
+      </h1>
+      <input type="text" id="text" oninput="this.value = this.value.toUpperCase()" onkeyup="updateValue();">
+      <div id="slider-div">
+        <output id="slider-value">24</output>
+        <input type="range" id="slider" value="24" min="0" max="26" oninput="ceaserCipher();">
+      </div>
+      <button onclick="updateSquare()">Update Square</button>
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+        </tr>
+        <tr>
+          <th>F</th>
+          <th>G</th>
+          <th>H</th>
+          <th>I</th>
+          <th>J</th>
+        </tr>
+        <tr>
+          <th>K</th>
+          <th>L</th>
+          <th>M</th>
+          <th>N</th>
+          <th>O</th>
+        </tr>
+        <tr>
+          <th>P</th>
+          <th>Q</th>
+          <th>R</th>
+          <th>S</th>
+          <th>T</th>
+        </tr>
+        <tr>
+          <th>U</th>
+          <th>V</th>
+          <th>W</th>
+          <th>X</th>
+          <th>Y</th>
+        </tr>
+      </table>
+    </div>
+    <div id="content">
+      <div id="ceaser-cipher">
+        <p id="ceaser-text"></p>
+      </div>
+      <div id="square-cipher">
+        <p id="square-text"></p>
+      </div>
+    </div>
+    <script src="js/dom.js"></script>
+  </body>
+</html>
